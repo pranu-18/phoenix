@@ -5,7 +5,6 @@ from sklearn.linear_model import LinearRegression
 import pandas as pd
 import math, datetime
 from matplotlib import style
-import re
 from datetime import datetime
 import time
 
