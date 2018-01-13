@@ -5,7 +5,6 @@ from sklearn.linear_model import LinearRegression
 import pandas as pd
 import math, datetime
 from matplotlib import style
-import re
 from datetime import datetime
 import time
 
@@ -23,7 +22,6 @@ X = np.array(dt1['x'])
 y = np.array(dt1['y'])
 
 X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.2)
-print(X_train.shape, y_train.shape)
 
 clf = LinearRegression(n_jobs=-1)
 X_train = X_train.reshape(-1,1)
